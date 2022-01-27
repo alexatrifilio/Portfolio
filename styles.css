@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Red+Hat+Mono:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap');
+/**
+* GENERAL LAYOUT
+**/
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+Body{
+    font-family: 'Red Hat Mono', monospace;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 500px;
+}
+.columns.projects{
+    max-width: 800px;
+}
+.section-description{
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+}
+.section-title, .section-description{
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+
+/**
+* BUTTONS
+**/
+.btn{
+    border: none;
+    border-radius: 1.4em;
+    height: 2.5em;
+    padding: 0.3em 1.9em;
+}
+
+/**
+* HEADER
+**/
+.top{
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 8px 10px 3px rgba(153, 153, 153, 0.158);
+    display: flex;
+    height: 90px;
+    justify-content: flex-end;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+}
+.main-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-items{
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    margin-left: 20px;
+    list-style: none;
+}
+
+
+
+
+/**
+* ABOUT ME
+**/
+.section-about-me{
+    padding: 100px 35px;
+    margin-bottom: 100px;
+}
+.main-column{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1100px;
+}
+.about-picture{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.about-image{
+    max-width: 400px;
+}
+.name, .greeting{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.about-description{
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.about-info{
+    width: 50%;
+}
+
+/**
+* CONOCIMIENTOS
+**/
+.section-skills, .section-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 35px;
+}
+.card{
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}
+.card-large{
+    height: 250px;
+    width: 250px;
+}
+
+
+
+/**
+* CITA
+**/
+.section-quote{
+    padding: 6em 2em;
+}
+.justify{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/**
+* CONTACTO
+**/
+.section-contact{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 100px 35px;
+}
+.contact-container{
+    border: 1px solid #555;
+    border-radius: 20px;
+    display: flex;
+    width: 1000px;
+}
+.contact-me, .contact-form{
+    padding: 1.8em;
+    width: 50%;
+}
+
+.link-container{
+    align-items: center;
+    display: flex;
+}
+.link-container i{
+    display: inline-flex;
+    margin-right: 0.625em;
+}
+.contact-links .link{
+    list-style: none;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.form-item label{
+    margin-bottom: 0.5em;
+}
+
+.first-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-row .form-item:first-child{
+    margin-right: 1.25em;
+}
+.form-item input:focus{
+    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.5);
+}
+.form-item textarea:focus{
+    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.5);
+}
+
+/**
+* FOOTER
+**/
+.footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 35px;
+}
+.footer-nav-items{
+    align-items: center;
+    display: flex;
+    padding: 0;
+}
+.footer-links{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.footer-link-item{
+    list-style: none;
+}
+/* ################# FONTS #######################*/
+/**
+* GENERAL LAYOUT FONTS
+**/
+.section-title, .section-description{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-description{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+}
+.skill-name{
+    font-weight: 500;
+}
+
+.card i{
+    font-size: 4rem;
+}
+.card-large i{
+    font-size: 6rem;
+}
+
+/**
+*BUTTON FONTS
+**/
+.btn-primary.btn-large{
+    /* color: black; */
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+/**
+* HEADER FONTS
+**/
+.nav-item a{
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-item a:hover{
+    color: #ff9100;
+}
+.nav-item:last-child a:hover{
+    color: black;
+}
+.nav-item.transform a:active{
+    /* border: none;
+    border-radius: 1.4em; */
+    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.2);
+    /* padding: 0.3rem 0.3rem;  */
+}
+
+/**
+* ABOUT ME FONTS
+**/
+.name{
+    color: #FFED00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.greeting{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.link-description, .link-container i{
+    color: black;
+}
+/* CITA */
+.justify{
+    text-align: center;
+}
+.justify i{
+    font-size: 6rem;
+}
+
+/* CONTACTO */
+.link-container i{
+    font-size: 1.25rem;
+}
+.link:hover a .link-container i, .link:hover a .link-container .link-description{
+    color: #ff9100;
+}
+
+/* ---------- FONDOS ------------*/
+.btn-primary, .bg-primary{
+    background-color: #FFED00;
+}
+.btn-primary:hover, .card:hover{
+    background-color: #fff677;
+}
+.card:active, .btn:active{
+    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.4);
+}
+.bg-secondary{
+    background-color: #fdfddd;
+}
+
+/**********************    RESPONSIVE   *******************************/
+
+
+@media(max-width: 1200px){
+    .top{
+        display: none;
+    }
+    .about-info{
+        width: 100%;
+    }
+    .about-info{
+        text-align: center;
+    }
+    .about-picture{
+        margin-top: 5em;
+    }
+}
+
+@media(max-width: 900px){
+    .card-large{
+        margin: 0.5em;
+        width: calc(100% / 2 - (1em * 2));
+    }
+
+    .contact-container{
+        background-color: white;
+        border: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .contact-me{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px){
+    .about-image{
+        width: calc(100% - (35px*2));
+    }
+    .card-large{
+        width: calc(100% - (40px*2));
+    }
+
+    .columns{
+        justify-content: space-around;
+    }
+    .contact-container{
+        max-width: 300px;
+    }
+    .contact-me{
+        text-align: center;
+    }
+    .contact-links{
+        padding: 0;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .footer-links{
+        padding: 0;
+    }
+}
