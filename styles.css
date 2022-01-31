@@ -15,7 +15,22 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+.section-description{
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+}
+.section-title, .section-description{
+    margin-bottom: 2.45rem;
+    margin-top: 0;
+    text-align: center;
+}
+.section-skills, .section-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 35px;
+}
 .columns{
     display: flex;
     flex-wrap: wrap;
@@ -27,25 +42,33 @@ a{
 .columns.projects{
     max-width: 800px;
 }
-.section-description{
-    margin: auto;
-    max-width: 900px;
-    text-align: center;
-}
-.section-title, .section-description{
-    margin-bottom: 40px;
-    margin-top: 0;
-}
 
+.card{
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}
+.card-large{
+    height: 250px;
+    width: 250px;
+}
 
 /**
 * BUTTONS
 **/
 .btn{
     border: none;
-    border-radius: 1.4em;
-    height: 2.5em;
-    padding: 0.3em 1.9em;
+    border-radius: 1.4rem;
+    height: 2.5rem;
+    padding: 0.3rem 1.9rem;
 }
 
 /**
@@ -84,9 +107,6 @@ a{
     list-style: none;
 }
 
-
-
-
 /**
 * ABOUT ME
 **/
@@ -114,42 +134,10 @@ a{
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.about-description{
-    margin-bottom: 30px;
-    margin-top: 15px;
-}
+
 .about-info{
     width: 50%;
 }
-
-/**
-* CONOCIMIENTOS
-**/
-.section-skills, .section-projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 150px 35px;
-}
-.card{
-    align-items: center;
-    border: 1px solid #555;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    justify-content: center;
-    margin-bottom: 50px;
-    padding: 20px;
-    text-align: center;
-    width: 150px;
-}
-.card-large{
-    height: 250px;
-    width: 250px;
-}
-
-
 
 /**
 * CITA
@@ -165,7 +153,6 @@ a{
 }
 
 
-
 /**
 * CONTACTO
 **/
@@ -173,7 +160,7 @@ a{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 100px 35px;
+    padding: 100px 35px;
 }
 .contact-container{
     border: 1px solid #555;
@@ -245,13 +232,11 @@ a{
 .footer-link-item{
     list-style: none;
 }
+
 /* ################# FONTS #######################*/
 /**
 * GENERAL LAYOUT FONTS
 **/
-.section-title, .section-description{
-    text-align: center;
-}
 
 .section-title{
     font-size: 2rem;
@@ -337,6 +322,12 @@ a{
     color: #ff9100;
 }
 
+/* FOOTER */
+.outro i{
+    font-size: 1rem;
+    color: red;
+}
+
 /* ---------- FONDOS ------------*/
 .btn-primary, .bg-primary{
     background-color: #FFED00;
@@ -372,7 +363,7 @@ a{
 @media(max-width: 900px){
     .card-large{
         margin: 0.5em;
-        width: calc(100% / 2 - (1em * 2));
+        width: 45%;
     }
 
     .contact-container{
@@ -396,7 +387,9 @@ a{
         width: calc(100% - (35px*2));
     }
     .card-large{
-        width: calc(100% - (40px*2));
+        margin-left: 45px;
+        margin-right: 45px;
+        width: 100%;
     }
 
     .columns{
